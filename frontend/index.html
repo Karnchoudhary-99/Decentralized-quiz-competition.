@@ -1,1 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized Quiz Platform</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decentralized Quiz Platform</h1>
+        <div class="quiz-section">
+            <label for="question">Question:</label>
+            <input type="text" id="question" placeholder="Enter quiz question">
 
+            <label for="options">Options (comma-separated):</label>
+            <input type="text" id="options" placeholder="Option 1, Option 2, Option 3">
+
+            <label for="correctIndex">Correct Option Index:</label>
+            <input type="number" id="correctIndex" min="0">
+
+            <button onclick="addQuestion()">Add Question</button>
+        </div>
+
+        <div class="participation-section">
+            <h2>Join Quiz</h2>
+            <input type="number" id="entryFee" placeholder="Entry Fee (ETH)">
+            <button onclick="participateInQuiz()">Participate</button>
+        </div>
+
+        <div class="winner-section">
+            <h2>Declare Winner</h2>
+            <input type="text" id="winnerAddress" placeholder="Winner's Wallet Address">
+            <button onclick="declareWinner()">Declare Winner</button>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
